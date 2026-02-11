@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Outlook Icons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Unbounded:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #101321;
+        --muted: #5d6271;
+        --paper: #f6f5f2;
+        --panel: #ffffff;
+        --accent: #e85d75;
+        --accent-2: #00a3c7;
+        --ring: rgba(16, 19, 33, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at top, #fff, var(--paper));
+        min-height: 100vh;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 56px 24px 72px;
+      }
+
+      header {
+        display: grid;
+        gap: 12px;
+      }
+
+      h1 {
+        font-family: "Unbounded", "Segoe UI", sans-serif;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        margin: 0;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 1.05rem;
+        max-width: 720px;
+      }
+
+      .grid {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 22px;
+      }
+
+      figure {
+        margin: 0;
+        background: var(--panel);
+        border-radius: 18px;
+        padding: 18px 18px 16px;
+        box-shadow: 0 18px 45px -32px rgba(16, 19, 33, 0.5);
+        border: 1px solid var(--ring);
+        display: grid;
+        gap: 14px;
+        align-content: start;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      figure:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 24px 60px -32px rgba(16, 19, 33, 0.55);
+      }
+
+      .badge {
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent-2);
+        font-weight: 600;
+      }
+
+      .icon-wrap {
+        display: grid;
+        place-items: center;
+        padding: 18px;
+        background: linear-gradient(135deg, rgba(232, 93, 117, 0.08), rgba(0, 163, 199, 0.1));
+        border-radius: 14px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        image-rendering: auto;
+      }
+
+      figcaption {
+        font-size: 0.95rem;
+        color: var(--muted);
+        word-break: break-word;
+      }
+
+      footer {
+        margin-top: 46px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .pulse {
+        position: relative;
+      }
+
+      .pulse::after {
+        content: "";
+        position: absolute;
+        inset: -6px;
+        border-radius: 20px;
+        border: 1px solid rgba(232, 93, 117, 0.2);
+        animation: pulse 4s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 0.4;
+        }
+        50% {
+          transform: scale(1.03);
+          opacity: 0.9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div class="badge">Outlook Icons</div>
+        <h1>Biblioteka ikon w jednym miejscu</h1>
+        <p class="subtitle">
+          Podgląd wszystkich ikon z folderu <strong>assets</strong>. Możesz
+          kliknąć prawym i zapisać konkretne rozmiary lub użyć ich bezpośrednio
+          w projekcie.
+        </p>
+      </header>
+
+      <section class="grid">
+        <figure class="pulse">
+          <div class="icon-wrap"><img src="assets/icon-16.png" alt="icon-16" /></div>
+          <figcaption>icon-16.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-32.png" alt="icon-32" /></div>
+          <figcaption>icon-32.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-64.png" alt="icon-64" /></div>
+          <figcaption>icon-64.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-80.png" alt="icon-80" /></div>
+          <figcaption>icon-80.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-128.png" alt="icon-128" /></div>
+          <figcaption>icon-128.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-dispute-16.png" alt="icon-dispute-16" /></div>
+          <figcaption>icon-dispute-16.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-dispute-32.png" alt="icon-dispute-32" /></div>
+          <figcaption>icon-dispute-32.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-dispute-80.png" alt="icon-dispute-80" /></div>
+          <figcaption>icon-dispute-80.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-mailhistory-16.png" alt="icon-mailhistory-16" /></div>
+          <figcaption>icon-mailhistory-16.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-mailhistory-32.png" alt="icon-mailhistory-32" /></div>
+          <figcaption>icon-mailhistory-32.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/icon-mailhistory-80.png" alt="icon-mailhistory-80" /></div>
+          <figcaption>icon-mailhistory-80.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/Logo%2048x48-beta.1.png" alt="Logo 48x48 beta" /></div>
+          <figcaption>Logo 48x48-beta.1.png</figcaption>
+        </figure>
+        <figure>
+          <div class="icon-wrap"><img src="assets/react.svg" alt="React logo" /></div>
+          <figcaption>react.svg</figcaption>
+        </figure>
+      </section>
+
+      <footer>
+        Jeśli chcesz, mogę dodać automatyczne generowanie listy ikon z assets.
+      </footer>
+    </main>
+  </body>
+</html>
